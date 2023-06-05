@@ -224,7 +224,7 @@ input[type=submit] {
                         <td>₱" . $row["total"] .   "</td>
                         <td>" . $row["date"] .   "</td>
 	                    <td><a href='deleterec.php?bid=" .$row["id"]." &bname=".$name. "' class='delbtn' style='text-decoration:none;'>Pay </a>  
-	                    <a href='editrec.php? &bid=".$row["id"]." &bname=".$row["item_name"]."&quantity=".$row["quantity"].  "' class='editbtn' >Edit </a>    </td></tr>";
+	                    <a href='edit.php? &bid=".$row["id"]." &bname=".$row["item_name"]."&quantity=".$row["quantity"].  "' class='editbtn' >Edit </a>    </td></tr>";
   }}else {
 	echo "No Record";
 	$sql1 = "TRUNCATE TABLE $name";
